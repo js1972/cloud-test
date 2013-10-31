@@ -7,6 +7,7 @@
 // This gumpf below uses java reflection to access the com.sap.security.auth api's, otherwise
 // the execution on Tomcat local server woul throw a ClassNotfound exception.
 // Of course... its better not to use reflection if you don't want to run in tomcat local server.
+// This generates a http400 on HANA Cloud! It still logs you out though - its just the response.
 
 String result = "";
 String reason = "";
